@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Mali } from "next/font/google";
 import "./globals.css";
+import TrpcProvider from "@/providers/trpc-provider";
 
 export const metadata: Metadata = {
 	title: "Create Next App",
@@ -23,7 +24,7 @@ export default function RootLayout({
 			<body
 				className={`${maliFont.variable} antialiased`}
 				cz-shortcut-listen="true">
-				{children}
+				<TrpcProvider>{children}</TrpcProvider>
 			</body>
 		</html>
 	);
