@@ -2,6 +2,11 @@
   "name": "blog",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Mikael Bernardes",
+    "email": "mikaelbernardes2022@gmail.com"
+  },
+  "license": "MIT",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
