@@ -10,10 +10,10 @@ datasource db {
 model User {
   id           Int       @id @default(autoincrement())
   createdAt    DateTime  @default(now())
-  username     String    @unique
+  username     String?   @unique
   email        String    @unique
   name         String
-  password     String
+  password     String?
   image        String?
   links        String?
   country      String?
@@ -23,6 +23,8 @@ model User {
   street       String?
   streetNumber Int?
   complement   String?
+  refreshToken String?
+  providerId   String?
   phone        String?   @unique
   role         Role      @default(USER)
   posts        Post[]
