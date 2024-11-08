@@ -22,8 +22,7 @@ export default function RootLayout({
 		<html lang="pt-BR">
 			<body
 				className={`${maliFont.variable} antialiased`}
-				cz-shortcut-listen="true"
-			>
+				cz-shortcut-listen="true">
 				{children}
 			</body>
 		</html>
